@@ -1,0 +1,89 @@
+.column {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+.form-wrapper {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	position: sticky;
+	top: 20px;;
+	background-color: white;
+	z-index: 3;
+}
+.form-wrapper::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-image: linear-gradient(to bottom, white, transparent);
+	z-index: 0;
+}
+.form-wrapper::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	top: -100px;
+	left: 0;
+	background-color: white;
+}
+.form-wrapper>* {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+}
+
+.post-btn {
+	width: 100%;
+	margin-top: 5px;
+	background-color: blue;
+	color: white;
+}
+
+.post {
+	padding-bottom: 10px;
+	border-top: 1px dotted gray;
+	position: relative;
+	z-index: 1;
+}
+.post>p {
+	margin-top: 0;
+}
+.post>h3 {
+	margin-bottom: 7px;
+}
+
+.post-actions>button {
+	margin-left: 3px;
+}
+
+.x-icon::after {
+	content: "\2573";
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.delete-post {
+	position: absolute;
+	right: 10px;
+	top: 16px;
+}
+
+.help-container {
+	position: fixed;
+	right: 100px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 300px;
+	height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+
+	border: 1px solid gray;
+}
+
+/* Fancy CSS */
